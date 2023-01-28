@@ -48,16 +48,71 @@
   <ItemGroup>
     <Compile Include="DAO\Cliente.cs" />
     <Compile Include="DAO\ClienteDAO.cs" />
+    <Compile Include="DAO\Usuario.cs" />
+    <Compile Include="frmInicioCesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInicioCesion.Designer.cs">
+      <DependentUpon>frmInicioCesion.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmRegistrar.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmRegistrar.Designer.cs">
       <DependentUpon>frmRegistrar.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmSeleccionCampos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSeleccionCampos.Designer.cs">
+      <DependentUpon>frmSeleccionCampos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\frmLaboratorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\frmLaboratorio.Designer.cs">
+      <DependentUpon>frmLaboratorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\frmMedico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\frmMedico.Designer.cs">
+      <DependentUpon>frmMedico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\frmOdontologia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\frmOdontologia.Designer.cs">
+      <DependentUpon>frmOdontologia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\frmVisual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\frmVisual.Designer.cs">
+      <DependentUpon>frmVisual.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmInicioCesion.resx">
+      <DependentUpon>frmInicioCesion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmRegistrar.resx">
       <DependentUpon>frmRegistrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSeleccionCampos.resx">
+      <DependentUpon>frmSeleccionCampos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\frmLaboratorio.resx">
+      <DependentUpon>frmLaboratorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\frmMedico.resx">
+      <DependentUpon>frmMedico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\frmOdontologia.resx">
+      <DependentUpon>frmOdontologia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\frmVisual.resx">
+      <DependentUpon>frmVisual.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
