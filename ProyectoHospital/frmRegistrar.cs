@@ -35,9 +35,15 @@ namespace ProyectoHospital
             ProyectoHospital.DAO.ClienteDAO objCliente = new ProyectoHospital.DAO.ClienteDAO();
             int x = objCliente.guardar(est);
             if (x > 0)
+            {
                 MessageBox.Show("Cliente registrado con éxito");
+                this.Close();
+            }
             else
+            {
                 MessageBox.Show("Error, no se pudo registrar el cliente");
+                txtnumCedula.Focus();
+            }
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)

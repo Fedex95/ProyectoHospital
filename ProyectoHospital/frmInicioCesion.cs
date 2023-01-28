@@ -40,7 +40,7 @@ namespace ProyectoHospital
             try
             {
                 string query;
-                query = "select * from Clientes where numCedula= '"+txtCedula.Text+"'and crearContraseña= '"+txtContraseña.Text+"'and apellidos'";
+                query = "SELECT * FROM Clientes WHERE numCedula='" + txtCedula.Text + "' AND crearContraseña='" + txtContraseña.Text + "'";
                 SqlCommand con = new SqlCommand(query,consql);
                 SqlDataReader drlogin;
                 consql.Open();

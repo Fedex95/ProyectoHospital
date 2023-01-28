@@ -42,18 +42,20 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(318, 20);
+            this.label1.Location = new System.Drawing.Point(238, 16);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(417, 39);
+            this.label1.Size = new System.Drawing.Size(335, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "CENTRO DE SALUD MEDICO";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(118, 59);
+            this.label2.Location = new System.Drawing.Point(88, 48);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(815, 16);
+            this.label2.Size = new System.Drawing.Size(658, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "INGRESE SU NUM CEDULA Y CONTRASEÑA SI YA TIENE UNA CUENTA CREADA, CASO CONTARIO P" +
     "RESIONE CREAR CUENTA";
@@ -61,43 +63,50 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(412, 164);
+            this.label3.Location = new System.Drawing.Point(309, 133);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(196, 16);
+            this.label3.Size = new System.Drawing.Size(161, 13);
             this.label3.TabIndex = 2;
             this.label3.Text = "NUM. CEDULA DE IDENTIDAD";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(455, 287);
+            this.label4.Location = new System.Drawing.Point(341, 233);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(101, 16);
+            this.label4.Size = new System.Drawing.Size(81, 13);
             this.label4.TabIndex = 3;
             this.label4.Text = "CONTRASEÑA";
             // 
             // txtCedula
             // 
-            this.txtCedula.Location = new System.Drawing.Point(406, 122);
-            this.txtCedula.Multiline = true;
+            this.txtCedula.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.txtCedula.Location = new System.Drawing.Point(304, 99);
+            this.txtCedula.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCedula.MaxLength = 10;
             this.txtCedula.Name = "txtCedula";
-            this.txtCedula.Size = new System.Drawing.Size(202, 39);
+            this.txtCedula.Size = new System.Drawing.Size(152, 20);
             this.txtCedula.TabIndex = 4;
+            this.txtCedula.UseWaitCursor = true;
+            this.txtCedula.WordWrap = false;
             // 
             // txtContraseña
             // 
-            this.txtContraseña.Location = new System.Drawing.Point(406, 245);
-            this.txtContraseña.Multiline = true;
+            this.txtContraseña.Location = new System.Drawing.Point(304, 199);
+            this.txtContraseña.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.PasswordChar = '*';
-            this.txtContraseña.Size = new System.Drawing.Size(202, 39);
+            this.txtContraseña.Size = new System.Drawing.Size(152, 20);
             this.txtContraseña.TabIndex = 5;
             // 
             // btnIngresar
             // 
-            this.btnIngresar.Location = new System.Drawing.Point(173, 377);
+            this.btnIngresar.Location = new System.Drawing.Point(130, 306);
+            this.btnIngresar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnIngresar.Name = "btnIngresar";
-            this.btnIngresar.Size = new System.Drawing.Size(209, 70);
+            this.btnIngresar.Size = new System.Drawing.Size(157, 57);
             this.btnIngresar.TabIndex = 6;
             this.btnIngresar.Text = "INGRESAR";
             this.btnIngresar.UseVisualStyleBackColor = true;
@@ -105,9 +114,10 @@
             // 
             // btnIniciarCesion
             // 
-            this.btnIniciarCesion.Location = new System.Drawing.Point(526, 377);
+            this.btnIniciarCesion.Location = new System.Drawing.Point(394, 306);
+            this.btnIniciarCesion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnIniciarCesion.Name = "btnIniciarCesion";
-            this.btnIniciarCesion.Size = new System.Drawing.Size(209, 70);
+            this.btnIniciarCesion.Size = new System.Drawing.Size(157, 57);
             this.btnIniciarCesion.TabIndex = 7;
             this.btnIniciarCesion.Text = "CREAR CUENTA";
             this.btnIniciarCesion.UseVisualStyleBackColor = true;
@@ -115,9 +125,9 @@
             // 
             // frmInicioCesion
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(998, 520);
+            this.ClientSize = new System.Drawing.Size(748, 422);
             this.Controls.Add(this.btnIniciarCesion);
             this.Controls.Add(this.btnIngresar);
             this.Controls.Add(this.txtContraseña);
@@ -126,6 +136,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmInicioCesion";
             this.Text = "INICIO DE CESION DEL CENTRO MEDICO";
             this.ResumeLayout(false);
