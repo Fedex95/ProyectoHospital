@@ -46,6 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\Citas.cs" />
+    <Compile Include="DAO\CitasDAO.cs" />
+    <Compile Include="DAO\CitasLbDAO.cs" />
+    <Compile Include="DAO\CitasODAO.cs" />
+    <Compile Include="DAO\CitasVsDAO.cs" />
     <Compile Include="DAO\Cliente.cs" />
     <Compile Include="DAO\ClienteDAO.cs" />
     <Compile Include="DAO\Usuario.cs" />

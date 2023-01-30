@@ -25,24 +25,31 @@ namespace ProyectoHospital
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            ProyectoHospital.DAO.Cliente est = new ProyectoHospital.DAO.Cliente();
-            est.numCedula = this.txtnumCedula.Text;
-            est.nombres = this.txtNombres.Text;
-            est.apellidos = this.txtApellidos.Text;
-            est.fechaNacimiento = dtfechaNacimiento.Value;
-            est.crearContraseña = this.txtContraseña.Text;
+            try
+            {
+                ProyectoHospital.DAO.Cliente est = new ProyectoHospital.DAO.Cliente();
+                est.numCedula = this.txtnumCedula.Text;
+                est.nombres = this.txtNombres.Text;
+                est.apellidos = this.txtApellidos.Text;
+                est.fechaNacimiento = dtfechaNacimiento.Value;
+                est.crearContraseña = this.txtContraseña.Text;
 
-            ProyectoHospital.DAO.ClienteDAO objCliente = new ProyectoHospital.DAO.ClienteDAO();
-            int x = objCliente.guardar(est);
-            if (x > 0)
-            {
-                MessageBox.Show("Cliente registrado con éxito");
-                this.Close();
+                ProyectoHospital.DAO.ClienteDAO objCliente = new ProyectoHospital.DAO.ClienteDAO();
+                int x = objCliente.guardar(est);
+                if (x > 0)
+                {
+                    MessageBox.Show("Cliente registrado con éxito");
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Error, no se pudo registrar el cliente");
+                    txtnumCedula.Focus();
+                }
             }
-            else
+            catch (SqlException)
             {
-                MessageBox.Show("Error, no se pudo registrar el cliente");
-                txtnumCedula.Focus();
+                MessageBox.Show("Este numero de cedula ya está en uso");
             }
         }
 
