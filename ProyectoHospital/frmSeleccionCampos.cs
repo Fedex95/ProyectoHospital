@@ -66,5 +66,20 @@ namespace ProyectoHospital
         {
             OpenChildFrm(new Frm.frmLaboratorio(), sender);
         }
+
+        private void btnFisioterapia_Click(object sender, EventArgs e)
+        {
+            OpenChildFrm(new Frm.frmFisioterapia(), sender);
+        }
+
+        private void btnFisiatríaYRehabilitación_Click(object sender, EventArgs e)
+        {
+            OpenChildFrm(new Frm.frmvFisiatríaYRehabilitación(), sender);
+        }
+
+        private void btnCitasSeparadas_Click(object sender, EventArgs e)
+        {
+            OpenChildFrm(new Frm.frmCitasSeparadas(), sender);
+        }
     }
 }

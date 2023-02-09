@@ -16,7 +16,7 @@ namespace ProyectoHospital
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmInicioCesion());
+            Application.Run(new frmSeleccionCampos());
         }
     }
 }

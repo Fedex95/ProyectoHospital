@@ -72,6 +72,18 @@
     <Compile Include="frmSeleccionCampos.Designer.cs">
       <DependentUpon>frmSeleccionCampos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm\frmCitasSeparadas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\frmCitasSeparadas.Designer.cs">
+      <DependentUpon>frmCitasSeparadas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\frmFisioterapia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\frmFisioterapia.Designer.cs">
+      <DependentUpon>frmFisioterapia.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm\frmLaboratorio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +102,12 @@
     <Compile Include="Frm\frmOdontologia.Designer.cs">
       <DependentUpon>frmOdontologia.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm\frmvFisiatríaYRehabilitación.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\frmvFisiatríaYRehabilitación.Designer.cs">
+      <DependentUpon>frmvFisiatríaYRehabilitación.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm\frmVisual.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +125,12 @@
     <EmbeddedResource Include="frmSeleccionCampos.resx">
       <DependentUpon>frmSeleccionCampos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Frm\frmCitasSeparadas.resx">
+      <DependentUpon>frmCitasSeparadas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\frmFisioterapia.resx">
+      <DependentUpon>frmFisioterapia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm\frmLaboratorio.resx">
       <DependentUpon>frmLaboratorio.cs</DependentUpon>
     </EmbeddedResource>
@@ -115,6 +139,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm\frmOdontologia.resx">
       <DependentUpon>frmOdontologia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\frmvFisiatríaYRehabilitación.resx">
+      <DependentUpon>frmvFisiatríaYRehabilitación.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm\frmVisual.resx">
       <DependentUpon>frmVisual.cs</DependentUpon>
