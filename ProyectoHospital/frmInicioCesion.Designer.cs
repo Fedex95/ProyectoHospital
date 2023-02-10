@@ -84,7 +84,7 @@
             // 
             this.txtCedula.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.txtCedula.Location = new System.Drawing.Point(304, 99);
-            this.txtCedula.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCedula.Margin = new System.Windows.Forms.Padding(2);
             this.txtCedula.MaxLength = 10;
             this.txtCedula.Name = "txtCedula";
             this.txtCedula.Size = new System.Drawing.Size(152, 20);
@@ -95,7 +95,7 @@
             // txtContraseña
             // 
             this.txtContraseña.Location = new System.Drawing.Point(304, 199);
-            this.txtContraseña.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtContraseña.Margin = new System.Windows.Forms.Padding(2);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.PasswordChar = '*';
             this.txtContraseña.Size = new System.Drawing.Size(152, 20);
@@ -104,7 +104,7 @@
             // btnIngresar
             // 
             this.btnIngresar.Location = new System.Drawing.Point(130, 306);
-            this.btnIngresar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnIngresar.Margin = new System.Windows.Forms.Padding(2);
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Size = new System.Drawing.Size(157, 57);
             this.btnIngresar.TabIndex = 6;
@@ -115,7 +115,7 @@
             // btnIniciarCesion
             // 
             this.btnIniciarCesion.Location = new System.Drawing.Point(394, 306);
-            this.btnIniciarCesion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnIniciarCesion.Margin = new System.Windows.Forms.Padding(2);
             this.btnIniciarCesion.Name = "btnIniciarCesion";
             this.btnIniciarCesion.Size = new System.Drawing.Size(157, 57);
             this.btnIniciarCesion.TabIndex = 7;
@@ -136,7 +136,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmInicioCesion";
             this.Text = "INICIO DE CESION DEL CENTRO MEDICO";
             this.ResumeLayout(false);

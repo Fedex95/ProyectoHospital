@@ -22,10 +22,13 @@ namespace ProyectoHospital.Frm
         {
             try
             {
+
                 ProyectoHospital.DAO.Citas eci = new ProyectoHospital.DAO.Citas();
-                eci.medico = this.cmbBox1Od.SelectedItem.ToString();
-                eci.fechaAtencion = dtfechaAtO.Value;
-                eci.horaCita = this.cmbBox2O.SelectedItem.ToString();
+                eci.numCedula2 = this.textBox1.Text;
+                eci.nombres2 = this.textBox2.Text;
+                eci.apellidos2 = this.textBox3.Text;
+                eci.medico = this.comboBox1.SelectedItem.ToString();
+                eci.fechaAtencion = this.comboBox2.SelectedItem.ToString();
 
                 ProyectoHospital.DAO.CitasODAO objCita = new ProyectoHospital.DAO.CitasODAO();
 
@@ -33,6 +36,7 @@ namespace ProyectoHospital.Frm
                 if (x > 0)
                 {
                     MessageBox.Show("Cita agendada con éxito");
+
                     this.Close();
                 }
                 else

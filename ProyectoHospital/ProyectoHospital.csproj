@@ -48,6 +48,8 @@
   <ItemGroup>
     <Compile Include="DAO\Citas.cs" />
     <Compile Include="DAO\CitasDAO.cs" />
+    <Compile Include="DAO\CitasDAOFs.cs" />
+    <Compile Include="DAO\CitasFisioDAO.cs" />
     <Compile Include="DAO\CitasLbDAO.cs" />
     <Compile Include="DAO\CitasODAO.cs" />
     <Compile Include="DAO\CitasVsDAO.cs" />

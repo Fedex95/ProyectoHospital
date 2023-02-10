@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace ProyectoHospital.DAO
 {
-    public class CitasODAO
+    public class CitasFisioDAO
     {
         public string cadenaConexion2 = "Server=DESKTOP-F; database=Proyecto; integrated security =true";
         public int aceptar(Citas citas)
         {
             SqlConnection conexion = new SqlConnection(cadenaConexion2);
-            string sql = "insert into sacarCitaOd(numCedula2, nombres2, apellidos2, medico, fechaAtencion) " +
+            string sql = "insert into sacarCitaFisio(numCedula2, nombres2, apellidos2, medico, fechaAtencion) " +
                 "values(@numCedula2, @nombres2, @apellidos2, @medico, @fechaAtencion)";
             SqlCommand comando = new SqlCommand(sql, conexion);
 
@@ -27,6 +27,5 @@ namespace ProyectoHospital.DAO
             conexion.Close();
             return resultado;
         }
-
     }
 }

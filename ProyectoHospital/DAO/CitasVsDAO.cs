@@ -13,14 +13,16 @@ namespace ProyectoHospital.DAO
         public int aceptar(Citas citas)
         {
             SqlConnection conexion = new SqlConnection(cadenaConexion2);
-            string sql = "insert into sacarCitaVs(medico, fechaAtencion, horaCita) " +
-                "values(@medico, @fechaAtencion, @horaCita)";
+            string sql = "insert into sacarCitaVs(numCedula2, nombres2, apellidos2, medico, fechaAtencion) " +
+                "values(@numCedula2, @nombres2, @apellidos2, @medico, @fechaAtencion)";
             SqlCommand comando = new SqlCommand(sql, conexion);
 
             conexion.Open();
+            comando.Parameters.Add(new SqlParameter("@numCedula2", citas.numCedula2));
+            comando.Parameters.Add(new SqlParameter("@nombres2", citas.nombres2));
+            comando.Parameters.Add(new SqlParameter("@apellidos2", citas.apellidos2));
             comando.Parameters.Add(new SqlParameter("@medico", citas.medico));
             comando.Parameters.Add(new SqlParameter("@fechaAtencion", citas.fechaAtencion));
-            comando.Parameters.Add(new SqlParameter("@horaCita", citas.horaCita));
             int resultado = comando.ExecuteNonQuery();
             conexion.Close();
             return resultado;
