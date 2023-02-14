@@ -79,7 +79,8 @@ namespace ProyectoHospital
 
         private void btnCitasSeparadas_Click(object sender, EventArgs e)
         {
-            OpenChildFrm(new Frm.frmCitasSeparadas(), sender);
+            Form formulario = new frmVisualizacionCitasSeparadas();
+            formulario.Show();
         }
     }
 }

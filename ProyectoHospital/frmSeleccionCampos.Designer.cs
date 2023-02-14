@@ -32,6 +32,9 @@
             this.labelNombre = new System.Windows.Forms.ToolStripStatusLabel();
             this.labelFecha = new System.Windows.Forms.ToolStripStatusLabel();
             this.panel_Lateral = new System.Windows.Forms.Panel();
+            this.btnCitasSeparadas = new System.Windows.Forms.Button();
+            this.btnFisiatríaYRehabilitación = new System.Windows.Forms.Button();
+            this.btnFisioterapia = new System.Windows.Forms.Button();
             this.btnLaboratorio = new System.Windows.Forms.Button();
             this.btnVisual = new System.Windows.Forms.Button();
             this.btnOdontologia = new System.Windows.Forms.Button();
@@ -39,9 +42,6 @@
             this.panel_Margen = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel_contenedor = new System.Windows.Forms.Panel();
-            this.btnFisioterapia = new System.Windows.Forms.Button();
-            this.btnFisiatríaYRehabilitación = new System.Windows.Forms.Button();
-            this.btnCitasSeparadas = new System.Windows.Forms.Button();
             this.statusStrip1.SuspendLayout();
             this.panel_Lateral.SuspendLayout();
             this.panel_Margen.SuspendLayout();
@@ -87,6 +87,45 @@
             this.panel_Lateral.Name = "panel_Lateral";
             this.panel_Lateral.Size = new System.Drawing.Size(199, 604);
             this.panel_Lateral.TabIndex = 1;
+            // 
+            // btnCitasSeparadas
+            // 
+            this.btnCitasSeparadas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCitasSeparadas.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCitasSeparadas.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCitasSeparadas.Location = new System.Drawing.Point(0, 478);
+            this.btnCitasSeparadas.Name = "btnCitasSeparadas";
+            this.btnCitasSeparadas.Size = new System.Drawing.Size(199, 61);
+            this.btnCitasSeparadas.TabIndex = 7;
+            this.btnCitasSeparadas.Text = "CItas Separadas";
+            this.btnCitasSeparadas.UseVisualStyleBackColor = true;
+            this.btnCitasSeparadas.Click += new System.EventHandler(this.btnCitasSeparadas_Click);
+            // 
+            // btnFisiatríaYRehabilitación
+            // 
+            this.btnFisiatríaYRehabilitación.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFisiatríaYRehabilitación.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnFisiatríaYRehabilitación.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFisiatríaYRehabilitación.Location = new System.Drawing.Point(0, 417);
+            this.btnFisiatríaYRehabilitación.Name = "btnFisiatríaYRehabilitación";
+            this.btnFisiatríaYRehabilitación.Size = new System.Drawing.Size(199, 61);
+            this.btnFisiatríaYRehabilitación.TabIndex = 6;
+            this.btnFisiatríaYRehabilitación.Text = "Fisiatría y Rehabilitación";
+            this.btnFisiatríaYRehabilitación.UseVisualStyleBackColor = true;
+            this.btnFisiatríaYRehabilitación.Click += new System.EventHandler(this.btnFisiatríaYRehabilitación_Click);
+            // 
+            // btnFisioterapia
+            // 
+            this.btnFisioterapia.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFisioterapia.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnFisioterapia.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFisioterapia.Location = new System.Drawing.Point(0, 356);
+            this.btnFisioterapia.Name = "btnFisioterapia";
+            this.btnFisioterapia.Size = new System.Drawing.Size(199, 61);
+            this.btnFisioterapia.TabIndex = 5;
+            this.btnFisioterapia.Text = "Fisioterapia";
+            this.btnFisioterapia.UseVisualStyleBackColor = true;
+            this.btnFisioterapia.Click += new System.EventHandler(this.btnFisioterapia_Click);
             // 
             // btnLaboratorio
             // 
@@ -167,45 +206,6 @@
             this.panel_contenedor.Name = "panel_contenedor";
             this.panel_contenedor.Size = new System.Drawing.Size(1039, 604);
             this.panel_contenedor.TabIndex = 2;
-            // 
-            // btnFisioterapia
-            // 
-            this.btnFisioterapia.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFisioterapia.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnFisioterapia.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFisioterapia.Location = new System.Drawing.Point(0, 356);
-            this.btnFisioterapia.Name = "btnFisioterapia";
-            this.btnFisioterapia.Size = new System.Drawing.Size(199, 61);
-            this.btnFisioterapia.TabIndex = 5;
-            this.btnFisioterapia.Text = "Fisioterapia";
-            this.btnFisioterapia.UseVisualStyleBackColor = true;
-            this.btnFisioterapia.Click += new System.EventHandler(this.btnFisioterapia_Click);
-            // 
-            // btnFisiatríaYRehabilitación
-            // 
-            this.btnFisiatríaYRehabilitación.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFisiatríaYRehabilitación.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnFisiatríaYRehabilitación.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFisiatríaYRehabilitación.Location = new System.Drawing.Point(0, 417);
-            this.btnFisiatríaYRehabilitación.Name = "btnFisiatríaYRehabilitación";
-            this.btnFisiatríaYRehabilitación.Size = new System.Drawing.Size(199, 61);
-            this.btnFisiatríaYRehabilitación.TabIndex = 6;
-            this.btnFisiatríaYRehabilitación.Text = "Fisiatría y Rehabilitación";
-            this.btnFisiatríaYRehabilitación.UseVisualStyleBackColor = true;
-            this.btnFisiatríaYRehabilitación.Click += new System.EventHandler(this.btnFisiatríaYRehabilitación_Click);
-            // 
-            // btnCitasSeparadas
-            // 
-            this.btnCitasSeparadas.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCitasSeparadas.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCitasSeparadas.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCitasSeparadas.Location = new System.Drawing.Point(0, 478);
-            this.btnCitasSeparadas.Name = "btnCitasSeparadas";
-            this.btnCitasSeparadas.Size = new System.Drawing.Size(199, 61);
-            this.btnCitasSeparadas.TabIndex = 7;
-            this.btnCitasSeparadas.Text = "CItas Separadas";
-            this.btnCitasSeparadas.UseVisualStyleBackColor = true;
-            this.btnCitasSeparadas.Click += new System.EventHandler(this.btnCitasSeparadas_Click);
             // 
             // frmSeleccionCampos
             // 

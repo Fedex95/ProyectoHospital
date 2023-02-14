@@ -56,6 +56,42 @@
     <Compile Include="DAO\Cliente.cs" />
     <Compile Include="DAO\ClienteDAO.cs" />
     <Compile Include="DAO\Usuario.cs" />
+    <Compile Include="FrmCitasSeparadas\frmCitasFisiatríaYRehabilitación.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCitasSeparadas\frmCitasFisiatríaYRehabilitación.Designer.cs">
+      <DependentUpon>frmCitasFisiatríaYRehabilitación.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCitasSeparadas\frmCitasFisioterapia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCitasSeparadas\frmCitasFisioterapia.Designer.cs">
+      <DependentUpon>frmCitasFisioterapia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCitasSeparadas\frmCitasLaboratorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCitasSeparadas\frmCitasLaboratorio.Designer.cs">
+      <DependentUpon>frmCitasLaboratorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCitasSeparadas\frmCitasMedicas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCitasSeparadas\frmCitasMedicas.Designer.cs">
+      <DependentUpon>frmCitasMedicas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCitasSeparadas\frmCitasOdontologicas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCitasSeparadas\frmCitasOdontologicas.Designer.cs">
+      <DependentUpon>frmCitasOdontologicas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCitasSeparadas\frmCitasVisuales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCitasSeparadas\frmCitasVisuales.Designer.cs">
+      <DependentUpon>frmCitasVisuales.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmInicioCesion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +109,12 @@
     </Compile>
     <Compile Include="frmSeleccionCampos.Designer.cs">
       <DependentUpon>frmSeleccionCampos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVisualizacionCitasSeparadas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVisualizacionCitasSeparadas.Designer.cs">
+      <DependentUpon>frmVisualizacionCitasSeparadas.cs</DependentUpon>
     </Compile>
     <Compile Include="Frm\frmCitasSeparadas.cs">
       <SubType>Form</SubType>
@@ -126,6 +168,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSeleccionCampos.resx">
       <DependentUpon>frmSeleccionCampos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVisualizacionCitasSeparadas.resx">
+      <DependentUpon>frmVisualizacionCitasSeparadas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm\frmCitasSeparadas.resx">
       <DependentUpon>frmCitasSeparadas.cs</DependentUpon>
