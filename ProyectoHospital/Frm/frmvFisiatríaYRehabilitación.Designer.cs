@@ -122,12 +122,14 @@
             // 
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
+            "Lunes 7 AM",
+            "Lunes 5 PM",
             "Martes 7 AM",
-            "Martes 10 AM",
-            "Jueves 12 PM",
-            "Jueves 3 PM",
-            "Sabado 5 PM",
-            "Sabado 7 PM"});
+            "Martes 5 PM",
+            "Viernes 12 PM",
+            "Viernes  6 PM",
+            "Sabado 8 AM",
+            "Sabado 1 PM"});
             this.comboBox2.Location = new System.Drawing.Point(328, 191);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(109, 21);
@@ -159,9 +161,9 @@
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "Pedro",
-            "Juan",
-            "Gil"});
+            "Jhoel Tenorio\t",
+            "Carlos Olaya",
+            "Gino Castillo"});
             this.comboBox1.Location = new System.Drawing.Point(328, 151);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(109, 21);

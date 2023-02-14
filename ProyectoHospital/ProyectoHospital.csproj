@@ -116,12 +116,6 @@
     <Compile Include="frmVisualizacionCitasSeparadas.Designer.cs">
       <DependentUpon>frmVisualizacionCitasSeparadas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frm\frmCitasSeparadas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Frm\frmCitasSeparadas.Designer.cs">
-      <DependentUpon>frmCitasSeparadas.cs</DependentUpon>
-    </Compile>
     <Compile Include="Frm\frmFisioterapia.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -160,6 +154,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmCitasSeparadas\frmCitasFisiatríaYRehabilitación.resx">
+      <DependentUpon>frmCitasFisiatríaYRehabilitación.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCitasSeparadas\frmCitasFisioterapia.resx">
+      <DependentUpon>frmCitasFisioterapia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCitasSeparadas\frmCitasLaboratorio.resx">
+      <DependentUpon>frmCitasLaboratorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCitasSeparadas\frmCitasMedicas.resx">
+      <DependentUpon>frmCitasMedicas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCitasSeparadas\frmCitasOdontologicas.resx">
+      <DependentUpon>frmCitasOdontologicas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCitasSeparadas\frmCitasVisuales.resx">
+      <DependentUpon>frmCitasVisuales.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmInicioCesion.resx">
       <DependentUpon>frmInicioCesion.cs</DependentUpon>
     </EmbeddedResource>
@@ -171,9 +183,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmVisualizacionCitasSeparadas.resx">
       <DependentUpon>frmVisualizacionCitasSeparadas.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Frm\frmCitasSeparadas.resx">
-      <DependentUpon>frmCitasSeparadas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm\frmFisioterapia.resx">
       <DependentUpon>frmFisioterapia.cs</DependentUpon>

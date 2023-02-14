@@ -159,8 +159,8 @@
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "Pedro",
-            "Juan",
+            "Patricio Rosero",
+            "Hector Lavoe",
             "Galo Farias"});
             this.comboBox1.Location = new System.Drawing.Point(333, 176);
             this.comboBox1.Name = "comboBox1";
@@ -184,9 +184,10 @@
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmFisioterapia";
             this.Text = "frmFisioterapia";
+            this.Load += new System.EventHandler(this.frmFisioterapia_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

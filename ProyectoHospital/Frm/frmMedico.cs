@@ -29,17 +29,18 @@ namespace ProyectoHospital.Frm
         }
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            
+            try
             {
+
                 ProyectoHospital.DAO.Citas eci = new ProyectoHospital.DAO.Citas();
                 eci.numCedula2 = this.textBox1.Text;
-                eci.nombres2= this.textBox2.Text;
-                eci.apellidos2= this.textBox3.Text;
+                eci.nombres2 = this.textBox2.Text;
+                eci.apellidos2 = this.textBox3.Text;
                 eci.medico = this.comboBox1.SelectedItem.ToString();
                 eci.fechaAtencion = cmbBox2Gen.SelectedItem.ToString();
 
                 ProyectoHospital.DAO.CitasDAO objCita = new ProyectoHospital.DAO.CitasDAO();
-            
+
                 int x = objCita.aceptar(eci);
                 if (x > 0)
                 {
@@ -51,6 +52,13 @@ namespace ProyectoHospital.Frm
                     MessageBox.Show("Error, no se pudo agendar la cita");
                 }
             }
+            catch (SqlException)
+            {
+                MessageBox.Show("Esta hora ya esta agendada, por favor elija otra");
+            }
         }
     }
 }
+    
+   
+

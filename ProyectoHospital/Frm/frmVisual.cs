@@ -47,5 +47,7 @@ namespace ProyectoHospital.Frm
                 MessageBox.Show("Esta hora ya esta agendada, por favor elija otra");
             }
         }
+
+        
     }
 }

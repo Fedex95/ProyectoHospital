@@ -46,12 +46,12 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(203, 18);
+            this.label1.Location = new System.Drawing.Point(153, 18);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(215, 21);
+            this.label1.Size = new System.Drawing.Size(284, 21);
             this.label1.TabIndex = 0;
-            this.label1.Text = "SEPARE SU CITA MEDICA ";
+            this.label1.Text = "SEPARE SU CITA MEDICA GENERAL";
             // 
             // btnAceptar
             // 
@@ -67,9 +67,9 @@
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "Pedro",
-            "Juan",
-            "Gil"});
+            "Martha Rosales\t",
+            "Pedro Cañizares",
+            "José Miranda"});
             this.comboBox1.Location = new System.Drawing.Point(328, 157);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(109, 21);
@@ -102,12 +102,26 @@
             // 
             this.cmbBox2Gen.FormattingEnabled = true;
             this.cmbBox2Gen.Items.AddRange(new object[] {
-            "Lunes 7 AM",
             "Lunes 10 AM",
+            "Lunes 12 PM",
+            "Lunes 3 PM",
+            "Lunes 5 PM",
+            "Martes 10 AM",
             "Martes 12 PM",
-            "Martes3 PM",
-            "Viernes 5 PM",
-            "Viernes 7 PM"});
+            "Martes 3 PM",
+            "Martes 5 PM",
+            "Miercoles 10 AM",
+            "Miercoles 12 PM",
+            "Miercoles 3 PM",
+            "Miercoles 5 PM",
+            "Jueves 10 AM",
+            "Jueves 12 PM",
+            "Jueves 3 PM",
+            "Jueves 5 PM",
+            "Viernes 10 AM",
+            "Viernes 12 PM",
+            "Viernes 3 PM",
+            "Viernes 5 PM"});
             this.cmbBox2Gen.Location = new System.Drawing.Point(328, 197);
             this.cmbBox2Gen.Name = "cmbBox2Gen";
             this.cmbBox2Gen.Size = new System.Drawing.Size(109, 21);
