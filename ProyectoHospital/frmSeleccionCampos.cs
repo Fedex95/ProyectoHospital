@@ -84,5 +84,7 @@ namespace ProyectoHospital
             Form formulario = new frmVisualizacionCitasSeparadas();
             formulario.Show();
         }
+
+      
     }
 }
