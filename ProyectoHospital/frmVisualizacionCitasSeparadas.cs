@@ -23,6 +23,7 @@ namespace ProyectoHospital
             this.Text = DAO.Usuario.nombreUsuario;
             labelNombre.Text = DAO.Usuario.nombreUsuario;
             labelFecha.Text = System.DateTime.Now.ToLongDateString();
+            Size = new Size(1225, 700);
         }
 
         private void OpenChildFrmCitasSeparadas(Form childFrmCitasSeparadas, object btnSender)
@@ -39,6 +40,7 @@ namespace ProyectoHospital
             this.panel_Contenedor.Tag = childFrmCitasSeparadas;
             childFrmCitasSeparadas.BringToFront();
             childFrmCitasSeparadas.Show();
+            Size = new Size(1210, 660);
         }
 
         private void btnCitasMedicas_Click(object sender, EventArgs e)

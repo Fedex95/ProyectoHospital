@@ -49,6 +49,10 @@ namespace ProyectoHospital.Frm
                 MessageBox.Show("Esta hora ya esta agendada, por favor elija otra");
             }
         }
-    
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

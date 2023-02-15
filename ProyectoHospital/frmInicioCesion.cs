@@ -87,5 +87,10 @@ namespace ProyectoHospital
             Form formulario = new frmRegistrar();
             formulario.Show();
         }
+
+        private void frmInicioCesion_Load(object sender, EventArgs e)
+        {
+            Size = new Size(1045, 622);
+        }
     }
 }

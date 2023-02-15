@@ -57,6 +57,11 @@ namespace ProyectoHospital.Frm
                 MessageBox.Show("Esta hora ya esta agendada, por favor elija otra");
             }
         }
+
+        private void frmMedico_Load(object sender, EventArgs e)
+        {
+           
+        }
     }
 }
     

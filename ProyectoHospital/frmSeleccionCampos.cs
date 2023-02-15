@@ -28,6 +28,7 @@ namespace ProyectoHospital
             this.Text = DAO.Usuario.nombreUsuario;
             labelNombre.Text = DAO.Usuario.nombreUsuario;
             labelFecha.Text = System.DateTime.Now.ToLongDateString();
+            Size = new Size(1255, 700);
         }
 
         
@@ -45,6 +46,7 @@ namespace ProyectoHospital
             this.panel_contenedor.Tag = childFrm;
             childFrm.BringToFront();
             childFrm.Show();
+            Size = new Size(1210, 660);
         }
 
         private void btnMedico_Click(object sender, EventArgs e)

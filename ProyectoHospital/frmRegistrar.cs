@@ -57,5 +57,20 @@ namespace ProyectoHospital
         {
             this.Close();
         }
+
+        private void txtnumCedula_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmRegistrar_Load(object sender, EventArgs e)
+        {
+            Size = new Size(1045, 622);
+        }
     }
 }
