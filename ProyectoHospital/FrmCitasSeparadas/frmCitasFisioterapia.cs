@@ -26,28 +26,24 @@ namespace ProyectoHospital.FrmCitasSeparadas
             {
                 connection.Open();
                 // Ejecuta una consulta SQL
+
                 string query = "SELECT * FROM sacarCitaFs";
                 SqlCommand command = new SqlCommand(query, connection);
                 SqlDataReader reader = command.ExecuteReader();
-                // Recorre los resultados de la consulta
                 while (reader.Read())
                 {
-                    // Obtiene los valores de la columna
-                    string numCedula2 = reader["numCedula2"].ToString();
-                    string nombres2 = reader["nombres2"].ToString();
-                    string apellidos2 = reader["apellidos2"].ToString();
-                    string medico = reader["medico"].ToString();
-                    string fechaAtencion = reader["fechaAtencion"].ToString();
+                    // Agregar el nombre del producto al ListBox
+                    listBox1.Items.Add(reader["numCedula2"].ToString());
+                    listBox2.Items.Add(reader["nombres2"].ToString());
+                    listBox3.Items.Add(reader["apellidos2"].ToString());
+                    listBox4.Items.Add(reader["medico"].ToString());
+                    listBox5.Items.Add(reader["fechaAtencion"].ToString());
 
-                    // Asigna los valores a los controles
-                    textBox1.Text = numCedula2;
-                    textBox2.Text = nombres2;
-                    textBox3.Text = apellidos2;
-                    textBox4.Text = medico;
-                    textBox5.Text = fechaAtencion;
                 }
 
+
                 // Cierra la conexión a la base de datos
+                reader.Close();
                 connection.Close();
             }
         }

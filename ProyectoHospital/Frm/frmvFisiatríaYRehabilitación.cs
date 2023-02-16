@@ -31,22 +31,34 @@ namespace ProyectoHospital.Frm
                 eci.numCedula2 = this.textBox1.Text;
                 eci.nombres2 = this.textBox2.Text;
                 eci.apellidos2 = this.textBox3.Text;
-                eci.medico = this.comboBox1.SelectedItem.ToString();
-                eci.fechaAtencion = this.comboBox2.SelectedItem.ToString();
-        
-                ProyectoHospital.DAO.CitasDAOFs objCita = new ProyectoHospital.DAO.CitasDAOFs();
+
+                if (comboBox1 != null && comboBox2 != null)
+                {
+                    if (comboBox1.SelectedItem != null && comboBox2.SelectedItem != null)
+                    {
+                        eci.medico = comboBox1.SelectedItem.ToString();
+                        eci.fechaAtencion = comboBox2.SelectedItem.ToString();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Debe llenar todos los campos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+
+                ProyectoHospital.DAO.CitasFisioDAO objCita = new ProyectoHospital.DAO.CitasFisioDAO();
 
                 int x = objCita.aceptar(eci);
                 if (x > 0)
                 {
                     MessageBox.Show("Cita agendada con éxito");
-
                     this.Close();
                 }
                 else
                 {
                     MessageBox.Show("Error, no se pudo agendar la cita");
                 }
+
+
             }
             catch (SqlException)
             {

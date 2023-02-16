@@ -25,14 +25,25 @@ namespace ProyectoHospital.Frm
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            try
+             try
             {
                 ProyectoHospital.DAO.Citas eci = new ProyectoHospital.DAO.Citas();
                 eci.numCedula2 = this.textBox1.Text;
                 eci.nombres2 = this.textBox2.Text;
                 eci.apellidos2 = this.textBox3.Text;
-                eci.medico = this.comboBox1.SelectedItem.ToString();
-                eci.fechaAtencion = this.comboBox2.SelectedItem.ToString();
+
+                if (comboBox1 != null && comboBox2 != null)
+                {
+                    if (comboBox1.SelectedItem != null && comboBox2.SelectedItem != null)
+                    {
+                        eci.medico = comboBox1.SelectedItem.ToString();
+                        eci.fechaAtencion = comboBox2.SelectedItem.ToString();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Debe llenar todos los campos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
 
                 ProyectoHospital.DAO.CitasLbDAO objCita = new ProyectoHospital.DAO.CitasLbDAO();
 
@@ -46,6 +57,8 @@ namespace ProyectoHospital.Frm
                 {
                     MessageBox.Show("Error, no se pudo agendar la cita");
                 }
+
+
             }
             catch (SqlException)
             {
